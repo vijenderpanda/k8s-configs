@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: client-app-ui
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: client-app-ui
+  template:
+    metadata:
+      labels:
+        app: client-app-ui
+    spec:
+      containers:
+      - image: vijenderpanda12/react_client_app:0.1.4
+        name: client-app-ui
+        ports:
+        - containerPort: 80
+          
+
