@@ -14,7 +14,7 @@ spec:
         app: client-app-ui
     spec:
       containers:
-      - image: vijenderpanda12/react_client_app:0.1.4
+      - image: vijenderpanda12/react_client_app:0.1.5
         name: client-app-ui
         ports:
         - containerPort: 80
