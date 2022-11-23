@@ -18,3 +18,5 @@ spec:
         name: client_app_ui
         ports:
         - containerPort: 80
+          
+
